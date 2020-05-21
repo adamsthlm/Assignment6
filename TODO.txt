@@ -1,0 +1,8 @@
+﻿Assignment 6 - ToDo reminder - (C) Carl-Adam Technologies 2020
+
+Thursday 05-21
+
+Working with implementation of GUI, have added menus and time / date.
+
+
+

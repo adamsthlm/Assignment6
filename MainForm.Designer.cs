@@ -42,7 +42,16 @@
             this.lblLiveClock = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.LabelDate = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtBoxToDoStuff = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lstBoxWstuff = new System.Windows.Forms.ListBox();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -121,7 +130,7 @@
             // 
             this.lblLiveClock.AutoSize = true;
             this.lblLiveClock.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLiveClock.Location = new System.Drawing.Point(659, 407);
+            this.lblLiveClock.Location = new System.Drawing.Point(506, 416);
             this.lblLiveClock.Name = "lblLiveClock";
             this.lblLiveClock.Size = new System.Drawing.Size(110, 25);
             this.lblLiveClock.TabIndex = 1;
@@ -137,17 +146,93 @@
             // 
             this.LabelDate.AutoSize = true;
             this.LabelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelDate.Location = new System.Drawing.Point(636, 382);
+            this.LabelDate.Location = new System.Drawing.Point(636, 416);
             this.LabelDate.Name = "LabelDate";
             this.LabelDate.Size = new System.Drawing.Size(152, 25);
             this.LabelDate.TabIndex = 2;
             this.LabelDate.Text = "YYYY-MM-DD";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(77, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Date and Time";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(115, 49);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(310, 20);
+            this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(493, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Priority";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(556, 52);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 6;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "ToDo";
+            // 
+            // txtBoxToDoStuff
+            // 
+            this.txtBoxToDoStuff.Location = new System.Drawing.Point(115, 78);
+            this.txtBoxToDoStuff.Name = "txtBoxToDoStuff";
+            this.txtBoxToDoStuff.Size = new System.Drawing.Size(562, 20);
+            this.txtBoxToDoStuff.TabIndex = 8;
+            this.txtBoxToDoStuff.Text = "*** HERE YOU ENTER WHAT STUFF TO DO ***";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lstBoxWstuff);
+            this.groupBox1.Location = new System.Drawing.Point(15, 164);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(773, 240);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "To Do";
+            // 
+            // lstBoxWstuff
+            // 
+            this.lstBoxWstuff.FormattingEnabled = true;
+            this.lstBoxWstuff.Location = new System.Drawing.Point(6, 45);
+            this.lstBoxWstuff.Name = "lstBoxWstuff";
+            this.lstBoxWstuff.Size = new System.Drawing.Size(761, 186);
+            this.lstBoxWstuff.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.txtBoxToDoStuff);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelDate);
             this.Controls.Add(this.lblLiveClock);
             this.Controls.Add(this.menuStrip1);
@@ -155,6 +240,7 @@
             this.Text = "Carl-Adam Technologies - ToDo Reminder 0.1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,6 +261,14 @@
         private System.Windows.Forms.Label lblLiveClock;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label LabelDate;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtBoxToDoStuff;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox lstBoxWstuff;
     }
 }
 

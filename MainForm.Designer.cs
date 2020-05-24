@@ -167,12 +167,12 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(310, 20);
             this.dateTimePicker1.TabIndex = 4;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(493, 60);
+            this.label2.Location = new System.Drawing.Point(466, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 5;
@@ -181,10 +181,11 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(556, 52);
+            this.comboBox1.Location = new System.Drawing.Point(510, 52);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(167, 21);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -202,6 +203,7 @@
             this.txtBoxToDoStuff.Size = new System.Drawing.Size(562, 20);
             this.txtBoxToDoStuff.TabIndex = 8;
             this.txtBoxToDoStuff.Text = "*** HERE YOU ENTER WHAT STUFF TO DO ***";
+            this.txtBoxToDoStuff.TextChanged += new System.EventHandler(this.TxtBoxToDoStuff_TextChanged);
             // 
             // groupBox1
             // 

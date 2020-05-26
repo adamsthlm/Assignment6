@@ -7,7 +7,7 @@ e-mail: ak7764@mau.se
 using System;
 namespace Assignment6
 {
-    enum Prio
+    enum PriorityType
     {
         Less_important,
         Important,

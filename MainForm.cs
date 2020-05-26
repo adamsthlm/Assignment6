@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+Denna fil har skapats som en del av kursen [C# I] på Malmö Universitet 2020
+Namn: Carl-Adam Berglund
+e-mail: ak7764@mau.se
+*/  
+
+
+using System;
 using System.Windows.Forms;
 
 namespace Assignment6
@@ -14,8 +21,8 @@ namespace Assignment6
 
         private void InitializeGUI()
         {
-            comboBox1.Items.AddRange(Enum.GetNames(typeof(Prio)));
-            comboBox1.SelectedIndex = (int)Prio.DO_IT_RIGHT_NOW;
+            comboBox1.Items.AddRange(Enum.GetNames(typeof(PriorityType)));
+            comboBox1.SelectedIndex = (int)PriorityType.DO_IT_RIGHT_NOW;
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -50,6 +57,11 @@ namespace Assignment6
         private void TxtBoxToDoStuff_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void ToolTip1_Popup(object sender, PopupEventArgs e)
+        {
+            toolTip1.SetToolTip(dateTimePicker1, "Click to open calender for date, write in time here");
         }
     }
 }

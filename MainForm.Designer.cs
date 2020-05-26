@@ -1,4 +1,11 @@
-﻿namespace Assignment6
+﻿/*
+Denna fil har skapats som en del av kursen [C# I] på Malmö Universitet 2020
+Namn: Carl-Adam Berglund
+e-mail: ak7764@mau.se
+*/
+
+
+namespace Assignment6
 {
     partial class MainForm
     {
@@ -50,6 +57,10 @@
             this.txtBoxToDoStuff = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lstBoxWstuff = new System.Windows.Forms.ListBox();
+            this.BtnAdd = new System.Windows.Forms.Button();
+            this.BtnChange = new System.Windows.Forms.Button();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -167,6 +178,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(310, 20);
             this.dateTimePicker1.TabIndex = 4;
+            this.toolTip1.SetToolTip(this.dateTimePicker1, "Click to open calender for date, write in time here");
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
             // 
             // label2
@@ -223,11 +235,41 @@
             this.lstBoxWstuff.Size = new System.Drawing.Size(761, 186);
             this.lstBoxWstuff.TabIndex = 0;
             // 
+            // BtnAdd
+            // 
+            this.BtnAdd.Location = new System.Drawing.Point(115, 120);
+            this.BtnAdd.Name = "BtnAdd";
+            this.BtnAdd.Size = new System.Drawing.Size(75, 23);
+            this.BtnAdd.TabIndex = 10;
+            this.BtnAdd.Text = "Add";
+            this.BtnAdd.UseVisualStyleBackColor = true;
+            // 
+            // BtnChange
+            // 
+            this.BtnChange.Location = new System.Drawing.Point(292, 120);
+            this.BtnChange.Name = "BtnChange";
+            this.BtnChange.Size = new System.Drawing.Size(75, 23);
+            this.BtnChange.TabIndex = 11;
+            this.BtnChange.Text = "Change";
+            this.BtnChange.UseVisualStyleBackColor = true;
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.Location = new System.Drawing.Point(469, 120);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(75, 23);
+            this.BtnDelete.TabIndex = 12;
+            this.BtnDelete.Text = "Delete";
+            this.BtnDelete.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BtnDelete);
+            this.Controls.Add(this.BtnChange);
+            this.Controls.Add(this.BtnAdd);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtBoxToDoStuff);
             this.Controls.Add(this.label3);
@@ -271,6 +313,10 @@
         private System.Windows.Forms.TextBox txtBoxToDoStuff;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox lstBoxWstuff;
+        private System.Windows.Forms.Button BtnAdd;
+        private System.Windows.Forms.Button BtnChange;
+        private System.Windows.Forms.Button BtnDelete;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

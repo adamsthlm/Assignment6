@@ -10,6 +10,7 @@ namespace Assignment6
     enum PriorityType
     {
         Less_important,
+        Normal,
         Important,
         More_Important,
         DO_IT_RIGHT_NOW

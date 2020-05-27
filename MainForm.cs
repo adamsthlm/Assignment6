@@ -21,8 +21,27 @@ namespace Assignment6
 
         private void InitializeGUI()
         {
-            comboBox1.Items.AddRange(Enum.GetNames(typeof(PriorityType)));
-            comboBox1.SelectedIndex = (int)PriorityType.DO_IT_RIGHT_NOW;
+            comboBox1.Items.Clear(); // clear combo box
+            txtBoxToDoStuff.Text = string.Empty; // clear txtbox
+            lstBoxWstuff.Items.Clear(); // clear listbox 
+            this.Text = "To Do Reminder" + " - Carl-Adam Berglund, Malmö University 2020";
+
+           // Initializing the combobox and introducing string priority 
+            string[] priority = Enum.GetNames(typeof(PriorityType));
+            foreach (var item in priority)
+            {
+                comboBox1.Items.Add(item.Replace("_", " "));
+
+            }
+            comboBox1.SelectedIndex = (int)PriorityType.Normal;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+
+            
+            // disable open and save menu items
+            openDatafileToolStripMenuItem.Enabled = false;
+            saveDatafileToolStripMenuItem.Enabled = false;
+
+
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -63,5 +82,48 @@ namespace Assignment6
         {
             toolTip1.SetToolTip(dateTimePicker1, "Click to open calender for date, write in time here");
         }
-    }
-}
+
+        private void Menu_Exit_Click()
+        {
+            Close();
+        }
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+            var res = MessageBox.Show(this, "You really want to quit?", "Exit",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (res != DialogResult.Yes)
+            {
+                e.Cancel = true;
+                return;
+            }
+        }
+        
+
+        // menuItem Exit Alt-F4, check if user really want to quit else go back an InitGUI (created by 2-click) 
+        private void ExitAltF4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var res = MessageBox.Show(this, "You really want to quit?", "Exit",
+           MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2);
+            if (res != DialogResult.Yes)
+            {
+                // e.Cancel = true;
+                InitializeGUI();
+            }
+            else
+            {
+                Menu_Exit_Click();
+            }
+        }
+
+        private void openDatafileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveDatafileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+    } // Class 
+} // NAMESPACE

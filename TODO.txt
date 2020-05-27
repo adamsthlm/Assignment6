@@ -3,9 +3,9 @@
 
 Assignment 6 - ToDo reminder - (C) Carl-Adam Technologies 2020
 --------------------------------------------------------------
+
 Thursday 05-21
 Working with implementation of GUI, have added menus and time / date.
-
 ---------------------------------------------------------------------
 
 Saturday 05-23
@@ -14,7 +14,10 @@ Adding something to GUI
 ---------------------------------------------------------------------
 
 Tuesday 05-26
-Starting with actual code writeing, Task.cs
+Starting with actual code writing, Task.cs
+---------------------------------------------------------------------
 
+Wednesday 05-27
+Working with InitializeGUI()
 
 

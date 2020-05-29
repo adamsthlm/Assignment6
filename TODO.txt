@@ -19,5 +19,14 @@ Starting with actual code writing, Task.cs
 
 Wednesday 05-27
 Working with InitializeGUI()
+---------------------------------------------------------------------
+
+Friday 05-29
+Early this morning I added the AboutBox with a kitten picture,
+it is working and I have pushed it to GiT for the public too see.
+going to bed now. It's 04:13
+---------------------------------------------------------------------
+
+ 
 
 

@@ -92,8 +92,10 @@ namespace Assignment6
             // newCtrlNToolStripMenuItem
             // 
             this.newCtrlNToolStripMenuItem.Name = "newCtrlNToolStripMenuItem";
+            this.newCtrlNToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.newCtrlNToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.newCtrlNToolStripMenuItem.Text = "New      Ctrl + N";
+            this.newCtrlNToolStripMenuItem.Text = "New";
+            this.newCtrlNToolStripMenuItem.Click += new System.EventHandler(this.NewCtrlNToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -105,14 +107,12 @@ namespace Assignment6
             this.openDatafileToolStripMenuItem.Name = "openDatafileToolStripMenuItem";
             this.openDatafileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openDatafileToolStripMenuItem.Text = "Open datafile";
-            this.openDatafileToolStripMenuItem.Click += new System.EventHandler(this.openDatafileToolStripMenuItem_Click);
             // 
             // saveDatafileToolStripMenuItem
             // 
             this.saveDatafileToolStripMenuItem.Name = "saveDatafileToolStripMenuItem";
             this.saveDatafileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveDatafileToolStripMenuItem.Text = "Save datafile";
-            this.saveDatafileToolStripMenuItem.Click += new System.EventHandler(this.saveDatafileToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -122,8 +122,9 @@ namespace Assignment6
             // exitAltF4ToolStripMenuItem
             // 
             this.exitAltF4ToolStripMenuItem.Name = "exitAltF4ToolStripMenuItem";
+            this.exitAltF4ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.exitAltF4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitAltF4ToolStripMenuItem.Text = "Exit Alt +F4";
+            this.exitAltF4ToolStripMenuItem.Text = "Exit";
             this.exitAltF4ToolStripMenuItem.Click += new System.EventHandler(this.ExitAltF4ToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
@@ -137,8 +138,9 @@ namespace Assignment6
             // omToolStripMenuItem
             // 
             this.omToolStripMenuItem.Name = "omToolStripMenuItem";
-            this.omToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.omToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.omToolStripMenuItem.Text = "Om...";
+            this.omToolStripMenuItem.Click += new System.EventHandler(this.OmToolStripMenuItem_Click);
             // 
             // lblLiveClock
             // 

@@ -116,14 +116,15 @@ namespace Assignment6
             }
         }
 
-        private void openDatafileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NewCtrlNToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            InitializeGUI();
         }
 
-        private void saveDatafileToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AboutBox aboutBox = new AboutBox();
+            aboutBox.Show();
         }
     } // Class 
 } // NAMESPACE

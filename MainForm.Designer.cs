@@ -93,37 +93,37 @@ namespace Assignment6
             // 
             this.newCtrlNToolStripMenuItem.Name = "newCtrlNToolStripMenuItem";
             this.newCtrlNToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newCtrlNToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newCtrlNToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.newCtrlNToolStripMenuItem.Text = "New";
             this.newCtrlNToolStripMenuItem.Click += new System.EventHandler(this.NewCtrlNToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(142, 6);
             // 
             // openDatafileToolStripMenuItem
             // 
             this.openDatafileToolStripMenuItem.Name = "openDatafileToolStripMenuItem";
-            this.openDatafileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openDatafileToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.openDatafileToolStripMenuItem.Text = "Open datafile";
             // 
             // saveDatafileToolStripMenuItem
             // 
             this.saveDatafileToolStripMenuItem.Name = "saveDatafileToolStripMenuItem";
-            this.saveDatafileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveDatafileToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.saveDatafileToolStripMenuItem.Text = "Save datafile";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(142, 6);
             // 
             // exitAltF4ToolStripMenuItem
             // 
             this.exitAltF4ToolStripMenuItem.Name = "exitAltF4ToolStripMenuItem";
             this.exitAltF4ToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitAltF4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitAltF4ToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.exitAltF4ToolStripMenuItem.Text = "Exit";
             this.exitAltF4ToolStripMenuItem.Click += new System.EventHandler(this.ExitAltF4ToolStripMenuItem_Click);
             // 
@@ -248,6 +248,7 @@ namespace Assignment6
             this.BtnAdd.TabIndex = 10;
             this.BtnAdd.Text = "Add";
             this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // BtnChange
             // 

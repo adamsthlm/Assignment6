@@ -12,6 +12,8 @@ namespace Assignment6
 {
     public partial class MainForm : Form
     {
+        readonly TaskManager taskManager = new TaskManager();
+
         public MainForm()
         {
             InitializeComponent();
@@ -125,6 +127,33 @@ namespace Assignment6
         {
             AboutBox aboutBox = new AboutBox();
             aboutBox.Show();
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            if (dateTimePicker1.Value < new DateTime(2000, 01, 01) || dateTimePicker1.Value >= new DateTime (2222, 01, 01))
+            {
+                MessageBox.Show("Wrong date, must be between 2000 - 2222");
+                return;
+            }
+
+            Task newTask = GetTaskFromUserInputs();
+            if (newTask != null)
+            {
+                taskManager.Add(newTask);
+                UpdateGUI();
+            }
+
+        }
+
+        private void UpdateGUI()
+        {
+            throw new NotImplementedException();
+        }
+
+        private Task GetTaskFromUserInputs()
+        {
+            throw new NotImplementedException();
         }
     } // Class 
 } // NAMESPACE

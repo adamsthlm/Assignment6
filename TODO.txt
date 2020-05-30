@@ -28,6 +28,14 @@ it is working and I have pushed it to GiT for the public too see.
 going to bed now. It's 04:13
 ---------------------------------------------------------------------
 
+Saturday 05-30
+Started on AddButton_Click()
+validating date, created TaskManager with taskList (List<>) 
+copying stuff from the shoppinglist project.
+Last known warning: field 'TaskManager._count is never assigned.... always 0
+
+
+
  
 
 

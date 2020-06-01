@@ -61,6 +61,7 @@ namespace Assignment6
             this.BtnChange = new System.Windows.Forms.Button();
             this.BtnDelete = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -138,7 +139,7 @@ namespace Assignment6
             // omToolStripMenuItem
             // 
             this.omToolStripMenuItem.Name = "omToolStripMenuItem";
-            this.omToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.omToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
             this.omToolStripMenuItem.Text = "Om...";
             this.omToolStripMenuItem.Click += new System.EventHandler(this.OmToolStripMenuItem_Click);
             // 
@@ -181,7 +182,7 @@ namespace Assignment6
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(115, 49);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(310, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(153, 20);
             this.dateTimePicker1.TabIndex = 4;
             this.toolTip1.SetToolTip(this.dateTimePicker1, "Click to open calender for date, write in time here");
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.DateTimePicker1_ValueChanged);
@@ -268,11 +269,21 @@ namespace Assignment6
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2.Location = new System.Drawing.Point(292, 49);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(92, 20);
+            this.dateTimePicker2.TabIndex = 13;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.DateTimePicker2_ValueChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.BtnDelete);
             this.Controls.Add(this.BtnChange);
             this.Controls.Add(this.BtnAdd);
@@ -323,6 +334,7 @@ namespace Assignment6
         private System.Windows.Forms.Button BtnChange;
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
 

@@ -4,30 +4,32 @@ namespace Assignment6
 {
     class TaskManager
     {
+        int _count;
         public List<Task> taskList = new List<Task>();
 
         public TaskManager()
         {
             taskList = new List<Task>();
+          
         }
 
-        private readonly int _count;
+       
 
         public int Count
         {
             get { return _count; }
-            // set { _count = value; }
+            set { _count = value; }
         }
 
-        public bool Add(Task taskIN)
+        public void
+            Add(Task taskIN)
         {
-            bool ok = false;
+            
             if (taskIN != null)
             {
                 taskList.Add(taskIN);
-                ok = true;
+                Count++;
             }
-            return ok;
         }
 
         public string[] ListToStringArray()
@@ -43,6 +45,8 @@ namespace Assignment6
             return stringInfoStrings;
 
         }
+
+       
 
 
     }

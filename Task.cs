@@ -50,6 +50,10 @@ namespace Assignment6
 			_description = description;
 		}
 
+		public Task()
+		{
+		}
+
 
 		// priority to string
 		public string GetPriorityString() 

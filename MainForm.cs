@@ -12,7 +12,12 @@ namespace Assignment6
 {
     public partial class MainForm : Form
     {
-        readonly TaskManager taskManager = new TaskManager();
+        private readonly TaskManager taskManager = new TaskManager();
+       
+        // konstigt fel
+        private Task task = new Task();                  // Kompilatorn säger att jag kan ta bort denna rad
+                                                         // men när jag gör det kommer det där skumma Error igen
+                                                         // Kan du förklara varför detta sker?
 
         public MainForm()
         {
@@ -23,6 +28,8 @@ namespace Assignment6
 
         private void InitializeGUI()
         {
+          
+            
             comboBox1.Items.Clear(); // clear combo box
             txtBoxToDoStuff.Text = string.Empty; // clear txtbox
             lstBoxWstuff.Items.Clear(); // clear listbox 
@@ -161,12 +168,13 @@ namespace Assignment6
         {
             lstBoxWstuff.Items.Clear();
             lstBoxWstuff.Items.AddRange(taskManager.ListToStringArray());
+            task = new Task();
 
         }
 
         private Task GetTaskFromUserInputs(out bool success)
         {
-            
+
             Task task2Add = new Task
             {
                 

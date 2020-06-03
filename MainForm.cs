@@ -15,7 +15,7 @@ namespace Assignment6
         private readonly TaskManager taskManager = new TaskManager();
        
         // konstigt fel
-        private Task task = new Task();                  // Kompilatorn säger att jag kan ta bort denna rad
+       // private Task task;                               // Kompilatorn säger att jag kan ta bort denna rad
                                                          // men när jag gör det kommer det där skumma Error igen
                                                          // Kan du förklara varför detta sker?
 
@@ -168,7 +168,7 @@ namespace Assignment6
         {
             lstBoxWstuff.Items.Clear();
             lstBoxWstuff.Items.AddRange(taskManager.ListToStringArray());
-            task = new Task();
+            // task = new Task();
 
         }
 
@@ -236,6 +236,9 @@ namespace Assignment6
             return datum;
         }
 
-      
+        private void MainForm_Load_1(object sender, EventArgs e)
+        {
+
+        }
     } // Class 
 } // NAMESPACE

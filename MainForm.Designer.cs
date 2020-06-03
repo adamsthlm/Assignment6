@@ -299,6 +299,7 @@ namespace Assignment6
             this.Controls.Add(this.menuStrip1);
             this.Name = "MainForm";
             this.Text = "Carl-Adam Technologies - ToDo Reminder 0.1";
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

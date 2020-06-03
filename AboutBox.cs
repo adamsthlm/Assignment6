@@ -14,12 +14,12 @@ namespace Assignment6
         public AboutBox()
         {
             InitializeComponent();
-            this.Text = "About To Do app";
-            this.labelProductName.Text = "ToDo";
-            this.labelVersion.Text ="Ver 0.99a";
-            this.labelCopyright.Text = "Copyright 2020 Carl-Adam Technologies";
-            this.labelCompanyName.Text = "Carl-Adam Technologies";
-            this.textBoxDescription.Text = "Thank you for using ToDo app!";
+            this.Text = Assembly.GetExecutingAssembly().GetName().Name;
+            this.labelProductName.Text = Assembly.GetExecutingAssembly().GetName().CultureName;
+            this.labelVersion.Text = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            this.labelCopyright.Text = AssemblyCopyright;
+            this.labelCompanyName.Text = AssemblyCompany;
+            this.textBoxDescription.Text = AssemblyDescription;
         }
 
         #region Assembly Attribute Accessors

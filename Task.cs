@@ -76,7 +76,8 @@ namespace Assignment6
 		{
 			return $"{Date.ToShortDateString(),-12}" +
 					$"{GetTimeString(),-7}" +
-					$"{Description}";
+					$"{Description}" +
+					$"    {GetPriorityString()}";
 		}
 
 
